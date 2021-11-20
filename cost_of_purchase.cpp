@@ -2,10 +2,11 @@
 using namespace std;
 
 	int main() {
-		double a, b, c;
+		int a, b, c;
 		cin >> a >> b >> c;
 		a = (a * c) + ((b * c) / 100);
-		cout << ((int(a * 10) % 10) > 0 ? ((int(a * 10) % 10) * 10): 0);
+		b = (b * c) % 100;
+		cout << a << " " << b;
 }
 
 
